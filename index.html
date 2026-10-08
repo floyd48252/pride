@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABATI PRIDE HARDWARE | Quality Roofing Sheets, Timber & Construction Materials</title>
+    <link rel="icon" type="image/jpeg" href="./box%20profile%20iron%20sheet.jpeg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                            dark: '#111827',
+                            navy: '#0f172a'
+                        },
+                        whatsapp: {
+                            500: '#25D366',
+                            600: '#128C7E',
+                            700: '#075E54'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        
+         ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #ea580c;
+            border-radius: 4px;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #c2410c;
+        }
+        /* Glassmorphism effects */
+        
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        /* Toast notification animation */
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        .animate-slide-in {
+            animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        /* Hero Banner Transition */
+        
+        .hero-slide {
+            transition: opacity 0.8s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- TOP HEADER ANNOUNCEMENT BAR -->
+    <div class="bg-brand-navy text-gray-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <a href="tel:+254782603291" class="hover:text-brand-500 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-brand-500 text-xs"></i> 0782603291
+                </a>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <a href="mailto:twyfordtilesnationalceramics@gmail.com" class="hover:text-brand-500 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-brand-500 text-xs"></i> twyfordtilesnationalceramics@gmail.com
+                </a>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <i class="fa-solid fa-location-dot text-brand-500 text-xs"></i> Nyeri, Kenya
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span class="bg-brand-600/20 text-brand-500 px-2.5 py-0.5 rounded-full font-semibold border border-brand-500/30">
+                    <i class="fa-solid fa-truck-fast mr-1"></i> Countrywide Delivery
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="./box%20profile%20iron%20sheet.jpeg" alt="MABATI PRIDE HARDWARE logo" class="w-12 h-12 object-cover rounded-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition transform">
+                    <div>
+                        <span class="text-lg sm:text-2xl font-black tracking-tight text-slate-900 block leading-none">MABATI <span class="text-brand-600">PRIDE HARDWARE</span></span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 block mt-1">Quality Roofing & Construction</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Search Bar -->
+                <div class="hidden lg:flex flex-1 max-w-md mx-8">
+                    <div class="relative w-full">
+                        <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search Mabati, Timber, PPR Pipes, Solar Lights..." class="w-full bg-gray-100 text-gray-800 text-sm rounded-xl pl-10 pr-4 py-2.5 border border-transparent focus:border-brand-500 focus:bg-white focus:outline-none transition">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-6 font-medium text-sm text-slate-700">
+                    <a href="#home" class="hover:text-brand-600 transition py-1 border-b-2 border-transparent hover:border-brand-600 font-semibold">Home</a>
+                    <a href="#products" class="hover:text-brand-600 transition py-1 border-b-2 border-transparent hover:border-brand-600 font-semibold">Shop</a>
+                    <a href="#quote" class="hover:text-brand-600 transition py-1 border-b-2 border-transparent hover:border-brand-600 font-semibold">Get Quote</a>
+                    <a href="about.html" class="hover:text-brand-600 transition py-1 border-b-2 border-transparent hover:border-brand-600 font-semibold">About Us</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition py-1 border-b-2 border-transparent hover:border-brand-600 font-semibold">Contact</a>
+                </nav>
+
+                <!-- Actions (Cart & Mobile Menu Button) -->
+                <div class="flex items-center gap-3">
+                    <!-- Quote Button desktop -->
+                    <a href="#quote" class="hidden sm:inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-md">
+                        <i class="fa-solid fa-calculator text-brand-500"></i>
+                        <span>Instant Quote</span>
+                    </a>
+
+                    <!-- Shopping Cart Toggle Button -->
+                    <button onclick="toggleCart()" class="relative p-2.5 text-slate-700 hover:text-brand-600 hover:bg-gray-100 rounded-xl transition" aria-label="Open Cart">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span id="cartBadge" class="absolute -top-1 -right-1 bg-brand-600 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-pulse">0</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-700 hover:bg-gray-100 rounded-lg" aria-label="Toggle Navigation">
+                        <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <div class="mb-3">
+                <input type="text" id="mobileSearchInput" onkeyup="syncMobileSearch(this.value)" placeholder="Search products..." class="w-full bg-gray-100 text-gray-800 text-sm rounded-lg px-4 py-2 border focus:outline-none focus:border-brand-500">
+            </div>
+            <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Home</a>
+            <a href="#products" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Shop Catalog</a>
+            <a href="#quote" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Request Custom Quote</a>
+            <a href="about.html" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">About Us</a>
+            <a href="contact.html" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Locations & Contact</a>
+            <div class="pt-2">
+                <a href="https://wa.me/254782603291" target="_blank" class="w-full bg-whatsapp-500 text-white flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative bg-slate-900 text-white overflow-hidden py-16 lg:py-24">
+            <!-- Background Backdrop overlay with pattern -->
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ea580c_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                    <!-- Left Hero Text Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-brand-600/20 border border-brand-500/40 text-brand-400 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                            <i class="fa-solid fa-award text-brand-500"></i> Kenya's Premier Roofing & Hardware Supplier
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                            Build Stronger With <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-amber-400">MABATI PRIDE HARDWARE</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal">
+                            High-gauge roofing sheets, certified timber, quality plumbing, and modern electrical fixtures. Direct manufacturer prices delivered straight to your site.
+                        </p>
+
+                        <!-- Call To Actions -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#products" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                                <span>Explore Products</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#quote" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold px-8 py-4 rounded-xl transition flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-file-invoice text-brand-500"></i>
+                                <span>Get Instant Estimate</span>
+                            </a>
+                        </div>
+
+                        <!-- Stats Badge -->
+                        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 text-center lg:text-left">
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                                <p class="text-xs text-slate-400 font-medium">Certified Quality</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-brand-500">Fast</p>
+                                <p class="text-xs text-slate-400 font-medium">Site Delivery</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-white">3+</p>
+                                <p class="text-xs text-slate-400 font-medium">Main Showrooms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual Showcase Card -->
+                    <div class="lg:col-span-5">
+                        <div class="relative mx-auto max-w-md lg:max-w-none bg-slate-800/80 backdrop-blur-md p-6 rounded-3xl border border-slate-700 shadow-2xl">
+                            <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden mb-5">
+                                <img id="heroImage" src="./box%20profile%20iron%20sheet.jpeg" alt="Capital Box Profile Mabati roofing sheets" class="w-full h-full object-cover transition-all duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-4 left-4 right-4 text-white">
+                                    <span id="heroBadge" class="bg-brand-600 text-[10px] font-bold uppercase px-2.5 py-1 rounded-md mb-1 inline-block">Best Seller</span>
+                                    <h3 id="heroTitle" class="text-lg font-bold">Capital Box Profile Mabati</h3>
+                                    <p id="heroPrice" class="text-brand-400 font-black text-xl">KSh 500 - 720 / meter</p>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controller Buttons -->
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Featured Item</span>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="prevSlide()" class="p-2 bg-slate-700 hover:bg-brand-600 text-white rounded-lg transition" aria-label="Previous Slide">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </button>
+                                    <button onclick="nextSlide()" class="p-2 bg-slate-700 hover:bg-brand-600 text-white rounded-lg transition" aria-label="Next Slide">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES & SHOPPING SECTION -->
+        <section id="products" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Explore Our Product Range</h2>
+                    <p class="text-slate-600 mt-2 text-base">Select from our premium category selection or filter items below. Select options and add directly to your WhatsApp order.</p>
+                </div>
+
+                <!-- Category Tabs Navigation -->
+                <div class="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-10" id="categoryTabs">
+                    <button onclick="filterCategory('all')" class="cat-btn active border px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-sm bg-brand-600 text-white border-brand-600">
+                        All Products
+                    </button>
+                    <button onclick="filterCategory('mabati')" class="cat-btn border px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-sm bg-white text-slate-700 hover:bg-gray-100 border-gray-200">
+                        <i class="fa-solid fa-house-roof text-brand-600 mr-1.5"></i> Quality Mabati
+                    </button>
+                    <button onclick="filterCategory('electrical')" class="cat-btn border px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-sm bg-white text-slate-700 hover:bg-gray-100 border-gray-200">
+                        <i class="fa-solid fa-bolt text-brand-600 mr-1.5"></i> Solar & Electrical
+                    </button>
+                    <button onclick="filterCategory('timber')" class="cat-btn border px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-sm bg-white text-slate-700 hover:bg-gray-100 border-gray-200">
+                        <i class="fa-solid fa-door-open text-brand-600 mr-1.5"></i> Doors & Timber
+                    </button>
+                    <button onclick="filterCategory('plumbing')" class="cat-btn border px-5 py-2.5 rounded-xl text-sm font-bold transition shadow-sm bg-white text-slate-700 hover:bg-gray-100 border-gray-200">
+                        <i class="fa-solid fa-faucet-drip text-brand-600 mr-1.5"></i> Accessories & Pipes
+                    </button>
+                </div>
+
+                <!-- Product Catalog Cards Grid Container -->
+                <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Dynamic Product Cards Injected Here via JavaScript -->
+                </div>
+
+                <!-- No Results Empty State -->
+                <div id="noResults" class="hidden text-center py-16 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fa-solid fa-magnifying-glass text-5xl text-gray-300 mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-800">No matching products found</h3>
+                    <p class="text-slate-500 mt-1">Try adjusting your search query or product filters.</p>
+                    <button onclick="filterCategory('all')" class="mt-4 bg-brand-600 text-white font-bold px-5 py-2 rounded-xl text-sm">
+                        Reset Filters
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CUSTOM QUOTE GENERATOR SECTION -->
+        <section id="quote" class="py-16 bg-slate-900 text-white relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-slate-800 rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl">
+                    <div class="text-center max-w-2xl mx-auto mb-8">
+                        <span class="bg-brand-600/20 text-brand-400 border border-brand-500/30 text-xs font-extrabold uppercase px-3 py-1 rounded-full">
+                            Instant Estimate
+                        </span>
+                        <h2 class="text-3xl font-black mt-3">Request a Custom Mabati & Project Quote</h2>
+                        <p class="text-slate-300 text-sm mt-2">Fill in your dimensions or requirements and send directly to our team via WhatsApp for instant pricing details.</p>
+                    </div>
+
+                    <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Your Full Name</label>
+                                <input type="text" id="quoteName" required placeholder="e.g. John Kamau" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Delivery Location / Town</label>
+                                <input type="text" id="quoteLocation" required placeholder="e.g. Kitui Town / Ruiru Kamakis" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Product Category</label>
+                                <select id="quoteCategory" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Box Profile Mabati">Box Profile Mabati</option>
+                                    <option value="Brick Tile Mabati">Brick Tile Mabati</option>
+                                    <option value="Corrugated Sheets">Corrugated Roofing Sheets</option>
+                                    <option value="Long Tile / Zentile">Long Tile / Zentile</option>
+                                    <option value="Stone Coated Tiles">Stone Coated Tiles</option>
+                                    <option value="Timber & Roofing Truss">Timber & Roofing Truss</option>
+                                    <option value="PPR / PVC Plumbing Materials">PPR / PVC Plumbing Materials</option>
+                                    <option value="Electrical & Lighting">Electrical & Solar Lighting</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Preferred Gauge / Thickness</label>
+                                <select id="quoteGauge" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Gauge 28 (Standard Heavy)">Gauge 28 (Standard Heavy)</option>
+                                    <option value="Gauge 30 (Medium)">Gauge 30 (Medium Duty)</option>
+                                    <option value="Gauge 32 (Light Duty)">Gauge 32 (Light Duty)</option>
+                                    <option value="Not Applicable">Not Applicable / Other Product</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Preferred Color</label>
+                                <select id="quoteColor" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Maroon Red">Maroon Red</option>
+                                    <option value="Charcoal Dark Grey">Charcoal Dark Grey</option>
+                                    <option value="Tile Red">Tile Red</option>
+                                    <option value="Blue">Royal Blue</option>
+                                    <option value="Green">Forest Green</option>
+                                    <option value="Plain Galvanized">Plain Galvanized</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Quantity / Meters Required</label>
+                                <input type="text" id="quoteQuantity" required placeholder="e.g. 50 pieces @ 3 meters" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Additional Notes / Custom Specs</label>
+                            <textarea id="quoteNotes" rows="3" placeholder="Enter details about valley ridges, caps, nails, or timber requirements..." class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-extrabold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Send Custom Quote Request via WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SHOPPING CART SLIDE-OVER DRAWER -->
+    <div id="cartModal" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+
+                <!-- Cart Header -->
+                <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping text-brand-500"></i>
+                        <h2 class="text-lg font-bold">Your Order Cart</h2>
+                    </div>
+                    <button onclick="toggleCart()" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Itemized Body -->
+                <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-gray-100">
+                    <!-- Dynamic Cart Items Rendered Here -->
+                </div>
+
+                <!-- Empty Cart State Container -->
+                <div id="emptyCartView" class="hidden flex-1 flex flex-col items-center justify-center p-6 text-center">
+                    <div class="w-20 h-20 bg-gray-100 text-gray-400 rounded-full flex items-center justify-center text-3xl mb-4">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800">Your cart is empty</h3>
+                    <p class="text-slate-500 text-xs mt-1 max-w-xs">Explore our catalog and add roofing sheets or building materials to order via WhatsApp.</p>
+                    <button onclick="toggleCart()" class="mt-4 bg-brand-600 text-white text-xs font-bold px-6 py-2.5 rounded-xl">
+                        Start Shopping
+                    </button>
+                </div>
+
+                <!-- Cart Footer & Checkout Action -->
+                <div id="cartFooter" class="p-6 bg-gray-50 border-t border-gray-200 space-y-4">
+                    <div class="flex justify-between items-center text-base font-bold text-slate-900">
+                        <span>Estimated Total:</span>
+                        <span id="cartTotal" class="text-xl text-brand-600">KES 0.00</span>
+                    </div>
+
+                    <!-- Customer Quick Details for WhatsApp Dispatch -->
+                    <div class="space-y-2 pt-2 border-t border-gray-200">
+                        <label class="block text-xs font-bold text-slate-700">Delivery Details (Required for Order)</label>
+                        <input type="text" id="custName" placeholder="Your Name (e.g., Peter)" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-500">
+                        <input type="text" id="custTown" placeholder="Delivery Town/Location (e.g., Kitui)" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-500">
+                    </div>
+
+                    <button onclick="checkoutWhatsApp()" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-extrabold py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Place Order via WhatsApp</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP CHAT WIDGET & BOT -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+        <!-- Floating Chat Popup Box -->
+        <div id="whatsappPopup" class="hidden bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 overflow-hidden animate-slide-in">
+            <div class="bg-whatsapp-600 text-white p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">MABATI PRIDE HARDWARE Support</h4>
+                        <span class="text-[10px] text-whatsapp-100 flex items-center gap-1">
+                            <span class="w-2 h-2 bg-green-300 rounded-full inline-block"></span> Online Now
+                        </span>
+                    </div>
+                </div>
+                <button onclick="toggleWhatsAppPopup()" class="text-white/80 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-4 bg-slate-50 space-y-3 text-xs">
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-slate-700">
+                    <p class="font-semibold text-slate-900 mb-1">Jambo! 👋</p>
+                    <p>How can we assist you today? Let us know your roofing or material requirement for quick pricing.</p>
+                </div>
+            </div>
+            <div class="p-3 bg-white border-t border-gray-100">
+                <a href="https://wa.me/254782603291?text=Jambo!%20I%20need%20assistance%20with%20Capital%20Mabati%20products." target="_blank" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2 text-xs transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Start WhatsApp Conversation
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Button Trigger -->
+        <button onclick="toggleWhatsAppPopup()" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition transform hover:scale-110 active:scale-95" aria-label="Open Live Chat">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-slate-900 text-slate-300 text-xs sm:text-sm pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="./box%20profile%20iron%20sheet.jpeg" alt="MABATI PRIDE HARDWARE logo" class="w-10 h-10 object-cover rounded-xl">
+                        <span class="text-xl font-black text-white tracking-tight">MABATI <span class="text-brand-500">PRIDE HARDWARE</span></span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        MABATI PRIDE HARDWARE is your trusted supplier of quality roofing sheets, structural steel, timber, plumbing materials, and high-grade construction accessories across Kenya.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 text-base">
+                        <a href="https://wa.me/254782603291" class="w-9 h-9 bg-slate-800 hover:bg-brand-600 rounded-lg flex items-center justify-center text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-brand-600 rounded-lg flex items-center justify-center text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-brand-600 rounded-lg flex items-center justify-center text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-brand-500 pl-3">Quick Navigation</h4>
+                    <ul class="space-y-2.5 text-slate-400">
+                        <li><a href="#home" class="hover:text-brand-500 transition">Home Overview</a></li>
+                        <li><a href="#products" class="hover:text-brand-500 transition">Shop Catalog</a></li>
+                        <li><a href="#quote" class="hover:text-brand-500 transition">Request Free Quote</a></li>
+                        <li><a href="about.html" class="hover:text-brand-500 transition">About MABATI PRIDE HARDWARE</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-500 transition">Contact & Branch Info</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Categories -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-brand-500 pl-3">Product Categories</h4>
+                    <ul class="space-y-2.5 text-slate-400">
+                        <li><a href="#products" onclick="filterCategory('mabati')" class="hover:text-brand-500 transition">Box & Brick Tile Mabati</a></li>
+                        <li><a href="#products" onclick="filterCategory('mabati')" class="hover:text-brand-500 transition">Corrugated & Zentile Sheets</a></li>
+                        <li><a href="#products" onclick="filterCategory('timber')" class="hover:text-brand-500 transition">Cypress & Bluegum Timber</a></li>
+                        <li><a href="#products" onclick="filterCategory('electrical')" class="hover:text-brand-500 transition">Solar & Modern LED Lighting</a></li>
+                        <li><a href="#products" onclick="filterCategory('plumbing')" class="hover:text-brand-500 transition">PPR & PVC Plumbing Pipes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Branch Locations & Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-brand-500 pl-3">Contact & Showrooms</h4>
+                    <p class="mb-3"><a href="contact.html" class="font-bold text-brand-400 hover:text-brand-300 transition">Visit our contact page <i class="fa-solid fa-arrow-right ml-1"></i></a></p>
+                    <div class="space-y-3 text-slate-400 text-xs">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-brand-500 mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Location:</strong>
+                                <span>Nyeri, Kenya</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2.5 pt-2">
+                            <i class="fa-solid fa-phone text-brand-500"></i>
+                            <a href="tel:+254782603291" class="text-white font-bold hover:text-brand-500">0782603291</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-brand-500"></i>
+                            <a href="mailto:twyfordtilesnationalceramics@gmail.com" class="hover:text-brand-500 transition">twyfordtilesnationalceramics@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright Divider -->
+            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 MABATI PRIDE HARDWARE. All Rights Reserved.</p>
+                <p>Designed for Quality & Durability</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed top-24 right-4 z-50 transform translate-x-full transition-transform duration-300 bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-3">
+        <div class="w-8 h-8 bg-brand-600 rounded-xl flex items-center justify-center text-white">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h5 id="toastTitle" class="font-bold text-xs">Added to Cart</h5>
+            <p id="toastMessage" class="text-[11px] text-slate-300">Item successfully added to order.</p>
+        </div>
+    </div>
+
+    <!-- CUSTOMER REVIEW POPUP -->
+    <div id="customerReviewPopup" role="status" aria-live="polite" class="fixed bottom-4 left-4 z-40 w-[calc(100%-2rem)] max-w-sm bg-white text-slate-800 p-4 pr-10 rounded-2xl shadow-2xl border border-gray-200 opacity-0 translate-y-4 pointer-events-none transition-all duration-300">
+        <button type="button" onclick="stopCustomerReviewPopups()" aria-label="Dismiss customer review popups" class="absolute top-3 right-3 text-slate-400 hover:text-slate-700">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <p id="customerReviewText" class="text-sm leading-relaxed"></p>
+        <p id="customerReviewAuthor" class="mt-2 text-xs font-bold text-slate-500"></p>
+    </div>
+
+    <script>
+        /* ==========================================================================
+                   PRODUCT CATALOG DATABASE
+                   ========================================================================== */
+        const products = [{
+                id: 1,
+                name: "Capital Box Profile",
+                category: "mabati",
+                minPrice: 500,
+                maxPrice: 720,
+                priceDisplay: "KSh 500 - 720",
+                unit: "meter",
+                image: "./box%20profile%20iron%20sheet.jpeg",
+                description: "Modern box profile design for residential & industrial roofing strength.",
+                hasGaugeOption: true,
+                badge: "Best Seller"
+            }, {
+                id: 2,
+                name: "Capital Brick Tile",
+                category: "mabati",
+                minPrice: 580,
+                maxPrice: 720,
+                priceDisplay: "KSh 580 - 720",
+                unit: "meter",
+                image: "./image%202.jpeg",
+                description: "Classic elegant brick tile appearance with corrosion protection.",
+                hasGaugeOption: true,
+                badge: "Popular"
+            }, {
+                id: 3,
+                name: "Capital Corrugated",
+                category: "mabati",
+                minPrice: 500,
+                maxPrice: 720,
+                priceDisplay: "KSh 500 - 720",
+                unit: "meter",
+                image: "./ordinary%20iron%20sheet%20.jpeg",
+                description: "Traditional wavy roofing sheet engineered for heavy rainfall shedding.",
+                hasGaugeOption: true
+            }, {
+                id: 4,
+                name: "Capital Long Tile",
+                category: "mabati",
+                minPrice: 580,
+                maxPrice: 720,
+                priceDisplay: "KSh 580 - 720",
+                unit: "meter",
+                image: "./sheet%206%20-%20Copy.jpeg",
+                description: "Premium long-span tile profile for seamless modern home roofs.",
+                hasGaugeOption: true
+            }, {
+                id: 5,
+                name: "Capital Zentile Mabati",
+                category: "mabati",
+                minPrice: 580,
+                maxPrice: 720,
+                priceDisplay: "KSh 580 - 720",
+                unit: "meter",
+                image: "./image%201.jpeg",
+                description: "Stylish zentile aesthetic offering superior fade resistance.",
+                hasGaugeOption: true
+            }, {
+                id: 6,
+                name: "Capital Stone Coated",
+                category: "mabati",
+                minPrice: 700,
+                maxPrice: 700,
+                priceDisplay: "KSh 700",
+                unit: "piece",
+                image: "./sheet%203%20-%20Copy.jpeg",
+                description: "Acoustic noise-reducing stone coated roof tiles with lifetime finish.",
+                hasGaugeOption: false,
+                badge: "Premium"
+            }, {
+                id: 7,
+                name: "Capital Tile Valley",
+                category: "mabati",
+                minPrice: 600,
+                maxPrice: 700,
+                priceDisplay: "KSh 600 - 700",
+                unit: "piece",
+                image: "./sheet%204%20-%20Copy.jpeg",
+                description: "Heavy-gauge valley gutters designed for optimal roof water drainage.",
+                hasGaugeOption: false
+            }, {
+                id: 8,
+                name: "Capital Roll Tops",
+                category: "mabati",
+                minPrice: 600,
+                maxPrice: 700,
+                priceDisplay: "KSh 600 - 700",
+                unit: "piece",
+                image: "./sheet%208.jpeg",
+                description: "Ridge capping for weatherproof protection along roof ridges.",
+                hasGaugeOption: false
+            }, {
+                id: 21,
+                name: "Capital Box Profile - Red",
+                category: "mabati",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "meter",
+                image: "./image%203.jpeg",
+                description: "Red-finish box profile roofing sheets. Ask us to confirm available gauges, lengths and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            }, {
+                id: 22,
+                name: "Capital Tile Profile - Green",
+                category: "mabati",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "meter",
+                image: "./image%207.jpeg",
+                description: "Green tile-profile roofing sheets. Ask us to confirm available gauges, lengths and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            },
+
+            /* ELECTRICAL PRODUCTS */
+            {
+                id: 9,
+                name: "Modern LED Ceiling Light",
+                category: "electrical",
+                minPrice: 2000,
+                maxPrice: 2000,
+                priceDisplay: "KSh 2,000",
+                unit: "unit",
+                image: "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=600&q=80",
+                description: "Energy-efficient surface mounted LED ceiling light fixture.",
+                hasGaugeOption: false
+            }, {
+                id: 10,
+                name: "Wall Bracket Light",
+                category: "electrical",
+                minPrice: 1800,
+                maxPrice: 1800,
+                priceDisplay: "KSh 1,800",
+                unit: "unit",
+                image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80",
+                description: "Decorative indoor and outdoor wall sconce bracket light.",
+                hasGaugeOption: false
+            }, {
+                id: 11,
+                name: "Adjustable LED Track Light",
+                category: "electrical",
+                minPrice: 700,
+                maxPrice: 700,
+                priceDisplay: "KSh 700",
+                unit: "unit",
+                image: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80",
+                description: "360-degree rotatable spotlight for modern living spaces.",
+                hasGaugeOption: false
+            }, {
+                id: 12,
+                name: "Modern Gypsum Ceiling Chandelier",
+                category: "electrical",
+                minPrice: 18000,
+                maxPrice: 18000,
+                priceDisplay: "KSh 18,000",
+                unit: "unit",
+                image: "./mordern%20gympson.png",
+                description: "Luxury decorative glass chandelier for main house living rooms.",
+                hasGaugeOption: false,
+                badge: "Luxury"
+            }, {
+                id: 23,
+                name: "Solar Security Floodlight",
+                category: "electrical",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "unit",
+                image: "https://plus.unsplash.com/premium_photo-1679815130320-2693569933c3?auto=format&fit=crop&w=600&q=80",
+                description: "Outdoor solar lighting solution with a separate solar panel. Ask us to confirm models and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            }, {
+                id: 24,
+                name: "Solar Wall Light",
+                category: "electrical",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "unit",
+                image: "https://plus.unsplash.com/premium_photo-1677208511140-7020c3759aba?auto=format&fit=crop&w=600&q=80",
+                description: "Outdoor wall-mounted lighting option. Ask us to confirm solar models and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            },
+
+            /* TIMBER & DOORS */
+            {
+                id: 13,
+                name: "Bluegum Timber",
+                category: "timber",
+                minPrice: 23,
+                maxPrice: 23,
+                priceDisplay: "KSh 23",
+                unit: "foot",
+                image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80",
+                description: "High density seasoned Bluegum timber for structural roofing truss.",
+                hasGaugeOption: false
+            }, {
+                id: 14,
+                name: "Mahogany Doors",
+                category: "timber",
+                minPrice: 22000,
+                maxPrice: 22000,
+                priceDisplay: "KSh 22,000",
+                unit: "door",
+                image: "https://images.unsplash.com/photo-1503898362-59e068e7f9d8?auto=format&fit=crop&w=600&q=80",
+                description: "Solid carved hardwood mahogany main doors with protective polish.",
+                hasGaugeOption: false,
+                badge: "Solid Wood"
+            }, {
+                id: 15,
+                name: "Cypress Timber",
+                category: "timber",
+                minPrice: 25,
+                maxPrice: 25,
+                priceDisplay: "KSh 25",
+                unit: "foot",
+                image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80",
+                description: "Straight pressure-treated cypress timber for construction frames.",
+                hasGaugeOption: false
+            }, {
+                id: 16,
+                name: "Semi-Solid Flush Doors",
+                category: "timber",
+                minPrice: 3600,
+                maxPrice: 3600,
+                priceDisplay: "KSh 3,600",
+                unit: "door",
+                image: "https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=600&q=80",
+                description: "Durable internal bedroom and office flush doors.",
+                hasGaugeOption: false
+            }, {
+                id: 25,
+                name: "Timber Door Frames",
+                category: "timber",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "frame",
+                image: "./door%20frames%202.webp",
+                description: "Timber door frames for building and renovation projects. Ask us to confirm sizes and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            }, {
+                id: 26,
+                name: "Waterproof Doors",
+                category: "timber",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "door",
+                image: "./water%20proof%20door%202.webp",
+                description: "Water-resistant door option for areas where added moisture protection is needed. Ask us to confirm specifications and price.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            },
+
+            /* PLUMBING & PIPES */
+            {
+                id: 17,
+                name: "PPR Pipes (Hot & Cold)",
+                category: "plumbing",
+                minPrice: 160,
+                maxPrice: 160,
+                priceDisplay: "From KSh 160",
+                unit: "length",
+                image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&q=80",
+                description: "Heat-resistant PPR plumbing pipes for clean indoor water supply.",
+                hasGaugeOption: false
+            }, {
+                id: 18,
+                name: "PPR Adapters & Fittings",
+                category: "plumbing",
+                minPrice: 35,
+                maxPrice: 35,
+                priceDisplay: "From KSh 35",
+                unit: "piece",
+                image: "https://images.unsplash.com/photo-1646009445351-b8192e095f3a?auto=format&fit=crop&w=600&q=80",
+                description: "Female/Male adapters, elbows, and tees for PPR pipe connections.",
+                hasGaugeOption: false
+            }, {
+                id: 19,
+                name: "PVC Waste Pipe",
+                category: "plumbing",
+                minPrice: 250,
+                maxPrice: 250,
+                priceDisplay: "From KSh 250",
+                unit: "length",
+                image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80",
+                description: "Durable PVC waste drainage pipe for household plumbing systems.",
+                hasGaugeOption: false
+            }, {
+                id: 20,
+                name: "PPR Roll Pipes",
+                category: "plumbing",
+                minPrice: 3500,
+                maxPrice: 3500,
+                priceDisplay: "From KSh 3,500",
+                unit: "roll",
+                image: "./ppr.png",
+                description: "Continuous long roll PPR water pipes for irrigation & main lines.",
+                hasGaugeOption: false
+            }, {
+                id: 27,
+                name: "PVC Pressure Pipes",
+                category: "plumbing",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "length",
+                image: "https://plus.unsplash.com/premium_photo-1661577094877-725f859aff3e?auto=format&fit=crop&w=600&q=80",
+                description: "PVC pipe options for water and drainage systems. Ask us to confirm sizes, pressure ratings and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            }, {
+                id: 28,
+                name: "Green PVC Drainage Pipes",
+                category: "plumbing",
+                minPrice: 0,
+                maxPrice: 0,
+                priceDisplay: "Request a quote",
+                unit: "length",
+                image: "https://plus.unsplash.com/premium_photo-1661373713949-510c1f0af83f?auto=format&fit=crop&w=600&q=80",
+                description: "Green PVC drainage pipe options. Ask us to confirm sizes, availability and pricing.",
+                hasGaugeOption: false,
+                quoteOnly: true
+            }
+        ];
+
+        /* ==========================================================================
+           STATE MANAGEMENT
+           ========================================================================== */
+        let cart = [];
+        let activeCategory = 'all';
+
+        // Hero Slide Data
+        const heroSlides = [{
+            title: "Capital Box Profile Mabati",
+            price: "KSh 500 - 720 / meter",
+            image: "./box%20profile%20iron%20sheet.jpeg",
+            badge: "Best Seller"
+        }, {
+            title: "Mahogany Hardwood Doors",
+            price: "KSh 22,000 / door",
+            image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+            badge: "Solid Hardwood"
+        }, {
+            title: "PPR Water Pipes & Fittings",
+            price: "From KSh 160",
+            image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80",
+            badge: "Quality Plumbing"
+        }];
+        let currentSlideIndex = 0;
+
+        /* ==========================================================================
+           INITIALIZATION ON LOAD
+           ========================================================================== */
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            startHeroAutoSlide();
+            startCustomerReviewPopups();
+        });
+
+        /* ==========================================================================
+           HERO SLIDER LOGIC
+           ========================================================================== */
+        function startHeroAutoSlide() {
+            setInterval(() => {
+                nextSlide();
+            }, 6000);
+        }
+
+        function updateSlideUI() {
+            const slide = heroSlides[currentSlideIndex];
+            const imgEl = document.getElementById('heroImage');
+            const titleEl = document.getElementById('heroTitle');
+            const priceEl = document.getElementById('heroPrice');
+            const badgeEl = document.getElementById('heroBadge');
+
+            if (imgEl) {
+                imgEl.style.opacity = '0.3';
+                setTimeout(() => {
+                    imgEl.src = slide.image;
+                    titleEl.textContent = slide.title;
+                    priceEl.textContent = slide.price;
+                    badgeEl.textContent = slide.badge;
+                    imgEl.style.opacity = '1';
+                }, 200);
+            }
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % heroSlides.length;
+            updateSlideUI();
+        }
+
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + heroSlides.length) % heroSlides.length;
+            updateSlideUI();
+        }
+
+        /* ==========================================================================
+           PRODUCT RENDERING & FILTERING
+           ========================================================================== */
+        function renderProducts(items) {
+            const grid = document.getElementById('productGrid');
+            const noRes = document.getElementById('noResults');
+
+            if (!items || items.length === 0) {
+                grid.innerHTML = '';
+                noRes.classList.remove('hidden');
+                return;
+            }
+
+            noRes.classList.add('hidden');
+            grid.innerHTML = items.map(product => {
+                        return `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                        <!-- Card Image -->
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            ${product.badge ? `<span class="absolute top-3 left-3 bg-brand-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow">${product.badge}</span>` : ''}
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base group-hover:text-brand-600 transition">${product.name}</h3>
+                                <p class="text-xs text-slate-500 mt-1 line-clamp-2">${product.description}</p>
+                                <div class="mt-3 flex items-baseline gap-1">
+                                    <span class="text-lg font-black text-brand-600">${product.priceDisplay}</span>
+                                    ${product.quoteOnly ? '' : `<span class="text-[11px] text-slate-400 font-medium">/ ${product.unit}</span>`}
+                                </div>
+                            </div>
+
+                            <!-- Options & Actions -->
+                            <div class="mt-4 pt-4 border-t border-gray-100 space-y-2">
+                                ${product.hasGaugeOption ? `
+                                    <div class="flex items-center justify-between gap-2 text-xs">
+                                        <span class="text-slate-500 font-semibold text-[11px]">Select Gauge:</span>
+                                        <select id="gauge-${product.id}" class="bg-gray-100 border border-gray-200 text-slate-700 text-xs rounded-lg px-2 py-1 font-semibold focus:outline-none focus:border-brand-500">
+                                            <option value="Gauge 28 (KSh ${product.maxPrice})">G28 (Heavy) - KSh ${product.maxPrice}</option>
+                                            <option value="Gauge 30 (KSh ${product.minPrice})">G30 (Medium) - KSh ${product.minPrice}</option>
+                                        </select>
+                                    </div>
+                                ` : ''}
+
+                                ${product.quoteOnly ? `
+                                    <button onclick="directWhatsAppBuy(${product.id})" class="w-full bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span>Request Quote</span>
+                                    </button>
+                                ` : `
+                                    <div class="grid grid-cols-2 gap-2 pt-1">
+                                        <button onclick="addToCart(${product.id})" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                            <span>Add Cart</span>
+                                        </button>
+                                        <button onclick="directWhatsAppBuy(${product.id})" class="bg-whatsapp-500 hover:bg-whatsapp-600 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-1.5">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span>Buy Now</span>
+                                        </button>
+                                    </div>
+                                `}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterCategory(cat) {
+            activeCategory = cat;
+            
+            // Update Tab UI
+            const buttons = document.querySelectorAll('.cat-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'border-brand-600');
+                btn.classList.add('bg-white', 'text-slate-700', 'border-gray-200');
+            });
+
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700', 'border-gray-200');
+            event.currentTarget.classList.add('bg-brand-600', 'text-white', 'border-brand-600');
+
+            applyFilters();
+        }
+
+        function filterProducts() {
+            applyFilters();
+        }
+
+        function syncMobileSearch(val) {
+            document.getElementById('searchInput').value = val;
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const filtered = products.filter(p => {
+                const matchesCat = (activeCategory === 'all' || p.category === activeCategory);
+                const matchesSearch = p.name.toLowerCase().includes(query) || p.description.toLowerCase().includes(query);
+                return matchesCat && matchesSearch;
+            });
+            renderProducts(filtered);
+        }
+
+        /* ==========================================================================
+           CART OPERATIONS
+           ========================================================================== */
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            if (product.quoteOnly) {
+                directWhatsAppBuy(productId);
+                return;
+            }
+
+            let selectedGauge = null;
+            let finalPrice = product.minPrice;
+
+            if (product.hasGaugeOption) {
+                const gaugeSelect = document.getElementById(`gauge-${productId}`);
+                if (gaugeSelect) {
+                    selectedGauge = gaugeSelect.value;
+                    if (selectedGauge.includes('Gauge 28')) {
+                        finalPrice = product.maxPrice;
+                    }
+                }
+            }
+
+            const cartItemKey = `${productId}-${selectedGauge || 'standard'}`;
+            const existingItem = cart.find(item => item.key === cartItemKey);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    key: cartItemKey,
+                    id: product.id,
+                    name: product.name,
+                    price: finalPrice,
+                    gauge: selectedGauge,
+                    quantity: 1,
+                    image: product.image
+                });
+            }
+
+            updateCartUI();
+            showToast("Added To Cart", `${product.name} is added to your order.`);
+        }
+
+        function updateQuantity(key, delta) {
+            const item = cart.find(i => i.key === key);
+            if (item) {
+                item.quantity += delta;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(i => i.key !== key);
+                }
+            }
+            updateCartUI();
+        }
+
+        function removeFromCart(key) {
+            cart = cart.filter(i => i.key !== key);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cartBadge');
+            const itemsContainer = document.getElementById('cartItemsContainer');
+            const emptyView = document.getElementById('emptyCartView');
+            const footer = document.getElementById('cartFooter');
+            const totalEl = document.getElementById('cartTotal');
+
+            // Count total item quantity
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            badge.textContent = totalCount;
+
+            if (cart.length === 0) {
+                itemsContainer.classList.add('hidden');
+                footer.classList.add('hidden');
+                emptyView.classList.remove('hidden');
+                return;
+            }
+
+            emptyView.classList.add('hidden');
+            itemsContainer.classList.remove('hidden');
+            footer.classList.remove('hidden');
+
+            let grandTotal = 0;
+
+            itemsContainer.innerHTML = cart.map(item => {
+                const itemTotal = item.price * item.quantity;
+                grandTotal += itemTotal;
+
+                return `
+                    <div class="pt-4 flex items-center gap-3">
+                        <img src="${item.image}" class="w-14 h-14 object-cover rounded-lg border">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xs text-slate-900">${item.name}</h4>
+                            ${item.gauge ? `<p class="text-[10px] text-brand-600 font-semibold">${item.gauge}</p>` : ''}
+                            <p class="text-xs font-black text-slate-800 mt-1">KES ${item.price.toLocaleString()} x ${item.quantity}</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center border rounded-lg bg-gray-50">
+                                <button onclick="updateQuantity('${item.key}', -1)" class="px-2 py-0.5 text-xs text-slate-600 hover:bg-gray-200 font-bold rounded-l">-</button>
+                                <span class="px-2 text-xs font-bold text-slate-800">${item.quantity}</span>
+                                <button onclick="updateQuantity('${item.key}', 1)" class="px-2 py-0.5 text-xs text-slate-600 hover:bg-gray-200 font-bold rounded-r">+</button>
+                            </div>
+                            <button onclick="removeFromCart('${item.key}')" class="text-red-500 hover:text-red-700 p-1">
+                                <i class="fa-solid fa-trash-can text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            totalEl.textContent = `KES ${grandTotal.toLocaleString()}`;
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cartModal');
+            modal.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.className = "fa-solid fa-bars text-xl";
+            } else {
+                icon.className = "fa-solid fa-xmark text-xl";
+            }
+        }
+
+        function toggleWhatsAppPopup() {
+            const pop = document.getElementById('whatsappPopup');
+            pop.classList.toggle('hidden');
+        }
+
+        /* ==========================================================================
+           WHATSAPP CHECKOUT INTEGRATIONS
+           ========================================================================== */
+        function checkoutWhatsApp() {
+            if (cart.length === 0) return;
+
+            const name = document.getElementById('custName').value.trim() || 'Valued Customer';
+            const town = document.getElementById('custTown').value.trim() || 'Not specified';
+
+            let msg = `*NEW ORDER - MABATI PRIDE HARDWARE*\n`;
+            msg += `------------------------------------\n`;
+            msg += `*Customer:* ${name}\n`;
+            msg += `*Delivery Location:* ${town}\n`;
+            msg += `------------------------------------\n`;
+            msg += `*ORDER ITEMS:*\n`;
+
+            let grandTotal = 0;
+            cart.forEach((item, index) => {
+                const sub = item.price * item.quantity;
+                grandTotal += sub;
+                msg += `${index + 1}. *${item.name}*\n`;
+                if (item.gauge) msg += `   - Spec: ${item.gauge}\n`;
+                msg += `   - Qty: ${item.quantity} | Unit: KES ${item.price.toLocaleString()} | Subtotal: KES ${sub.toLocaleString()}\n\n`;
+            });
+
+            msg += `------------------------------------\n`;
+            msg += `*TOTAL ESTIMATE: KES ${grandTotal.toLocaleString()}*\n`;
+            msg += `------------------------------------\n`;
+            msg += `Please confirm availability and delivery timeframe to my location.`;
+
+            const encodedMsg = encodeURIComponent(msg);
+            const whatsappUrl = `https://wa.me/254782603291?text=${encodedMsg}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function directWhatsAppBuy(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            let gaugeText = "";
+            if (product.hasGaugeOption) {
+                const gaugeSelect = document.getElementById(`gauge-${productId}`);
+                if (gaugeSelect) {
+                    gaugeText = ` (${gaugeSelect.value})`;
+                }
+            }
+
+            if (product.quoteOnly) {
+                const quoteMsg = `Jambo MABATI PRIDE HARDWARE! Please send me a quote for:\n\n*Product:* ${product.name}\n\nPlease confirm the current price, available specifications and delivery options.`;
+                window.open(`https://wa.me/254782603291?text=${encodeURIComponent(quoteMsg)}`, '_blank');
+                return;
+            }
+
+            let msg = `Jambo MABATI PRIDE HARDWARE! I am interested in purchasing:\n\n`;
+            msg += `*Product:* ${product.name}${gaugeText}\n`;
+            msg += `*Listed Price:* ${product.priceDisplay}\n\n`;
+            msg += `Please send me the ordering details and delivery options.`;
+
+            const encoded = encodeURIComponent(msg);
+            window.open(`https://wa.me/254782603291?text=${encoded}`, '_blank');
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('quoteName').value;
+            const location = document.getElementById('quoteLocation').value;
+            const category = document.getElementById('quoteCategory').value;
+            const gauge = document.getElementById('quoteGauge').value;
+            const color = document.getElementById('quoteColor').value;
+            const quantity = document.getElementById('quoteQuantity').value;
+            const notes = document.getElementById('quoteNotes').value;
+
+            let msg = `*CUSTOM QUOTE REQUEST - MABATI PRIDE HARDWARE*\n`;
+            msg += `------------------------------------\n`;
+            msg += `*Name:* ${name}\n`;
+            msg += `*Delivery Location:* ${location}\n`;
+            msg += `*Category:* ${category}\n`;
+            msg += `*Gauge Preference:* ${gauge}\n`;
+            msg += `*Preferred Color:* ${color}\n`;
+            msg += `*Quantity / Measurements:* ${quantity}\n`;
+            if (notes) msg += `*Notes:* ${notes}\n`;
+            msg += `------------------------------------\n`;
+            msg += `Please provide me with a full price quote and delivery estimate.`;
+
+            const encoded = encodeURIComponent(msg);
+            window.open(`https://wa.me/254782603291?text=${encoded}`, '_blank');
+        }
+
+        /* ==========================================================================
+           TOAST NOTIFICATION HELPER
+           ========================================================================== */
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastTitle').textContent = title;
+            document.getElementById('toastMessage').textContent = message;
+
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 3000);
+        }
+
+        const customerReviews = [{
+            text: "My order was handled smoothly, from the first enquiry through delivery.",
+            author: "Brian Kiptoo · Verified customer"
+        }];
+        function showCustomerReview() {
+            const review = customerReviews[0];
+            const popup = document.getElementById('customerReviewPopup');
+
+            document.getElementById('customerReviewText').textContent = review.text;
+            document.getElementById('customerReviewAuthor').textContent = review.author;
+            popup.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+            popup.classList.add('opacity-100', 'translate-y-0');
+        }
+
+        function startCustomerReviewPopups() {
+            showCustomerReview();
+        }
+
+        function stopCustomerReviewPopups() {
+            const popup = document.getElementById('customerReviewPopup');
+            popup.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            popup.classList.remove('opacity-100', 'translate-y-0');
+        }
+    </script>
+</body>
+
+</html>

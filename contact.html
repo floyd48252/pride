@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Capital Mabati for roofing, timber and construction material enquiries. Find us in Nyeri, Kenya.">
+    <title>Contact Us | Capital Mabati</title>
+    <link rel="icon" type="image/jpeg" href="./box%20profile%20iron%20sheet.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                            navy: '#0f172a'
+                        },
+                        whatsapp: {
+                            500: '#25D366',
+                            600: '#128C7E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+    <div class="bg-brand-navy text-gray-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <a href="tel:+254782603291" class="hover:text-brand-500 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-brand-500 text-xs"></i> 0782603291
+                </a>
+                <a href="mailto:twyfordtilesnationalceramics@gmail.com" class="hover:text-brand-500 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-brand-500 text-xs"></i> twyfordtilesnationalceramics@gmail.com
+                </a>
+            </div>
+            <span class="bg-brand-600/20 text-brand-500 px-2.5 py-0.5 rounded-full font-semibold border border-brand-500/30">
+                <i class="fa-solid fa-truck-fast mr-1"></i> Countrywide Delivery
+            </span>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-white shadow-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="min-h-20 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="index.html#home" class="flex items-center gap-3 group">
+                    <img src="./box%20profile%20iron%20sheet.jpeg" alt="Capital Mabati logo" class="w-12 h-12 object-cover rounded-xl shadow-lg shadow-brand-500/30">
+                    <div>
+                        <span class="text-2xl font-black tracking-tight text-slate-900 block leading-none">CAPITAL <span class="text-brand-600">MABATI</span></span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 block mt-1">Quality Roofing & Construction</span>
+                    </div>
+                </a>
+                <nav class="flex items-center gap-5 font-semibold text-sm text-slate-700">
+                    <a href="index.html#home" class="hover:text-brand-600 transition">Home</a>
+                    <a href="index.html#products" class="hover:text-brand-600 transition">Shop</a>
+                    <a href="about.html" class="hover:text-brand-600 transition">About Us</a>
+                    <a href="contact.html" aria-current="page" class="text-brand-600">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-slate-900 text-white py-14 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-brand-500 font-bold uppercase tracking-widest text-xs mb-3">We’re here to help</p>
+                <h1 class="text-4xl sm:text-5xl font-black tracking-tight">Contact Capital Mabati</h1>
+                <p class="text-slate-300 mt-4 max-w-2xl">Ask us about roofing sheets, timber, delivery, or any of our construction products. Send us your details and query, or visit one of our locations.</p>
+            </div>
+        </section>
+
+        <section class="py-12 sm:py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-extrabold text-slate-900">Send us a query</h2>
+                        <p class="text-sm text-slate-600 mt-2">Fill in your details and we’ll prepare a message for you to send by email.</p>
+                    </div>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="contactName" class="block text-sm font-semibold text-slate-700 mb-1.5">Full name</label>
+                            <input id="contactName" name="name" type="text" autocomplete="name" required class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="contactEmail" class="block text-sm font-semibold text-slate-700 mb-1.5">Email address</label>
+                                <input id="contactEmail" name="email" type="email" autocomplete="email" required class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100">
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone number</label>
+                                <input id="contactPhone" name="phone" type="tel" autocomplete="tel" class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contactSubject" class="block text-sm font-semibold text-slate-700 mb-1.5">Subject</label>
+                            <input id="contactSubject" name="subject" type="text" required class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100">
+                        </div>
+                        <div>
+                            <label for="contactMessage" class="block text-sm font-semibold text-slate-700 mb-1.5">Your query</label>
+                            <textarea id="contactMessage" name="message" rows="5" required class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-3.5 px-5 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send query by email
+                        </button>
+                        <p id="formNotice" class="hidden text-sm text-slate-600" role="status" aria-live="polite"></p>
+                    </form>
+                    <p class="text-xs text-slate-500 mt-4">Your email app will open with your query ready to send. If it doesn’t open, email us at <a href="mailto:twyfordtilesnationalceramics@gmail.com" class="text-brand-700 underline break-all">twyfordtilesnationalceramics@gmail.com</a>.</p>
+                </div>
+
+                <div class="lg:col-span-3 space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></div>
+                            <h3 class="font-bold text-slate-900">Nyeri Head Office</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nyeri, Kenya</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Capital+Mabati+Nyeri+Kenya" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-700 font-bold inline-flex items-center gap-1 mt-3">Open map <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></div>
+                            <h3 class="font-bold text-slate-900">Nyeri Showroom</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nyeri, Kenya</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Capital+Mabati+Nyeri+Kenya" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-700 font-bold inline-flex items-center gap-1 mt-3">Open map <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></div>
+                            <h3 class="font-bold text-slate-900">Nyeri Branch</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nyeri, Kenya</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Capital+Mabati+Nyeri+Kenya" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-700 font-bold inline-flex items-center gap-1 mt-3">Open map <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+                        </div>
+                        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-3"><i class="fa-solid fa-headset"></i></div>
+                            <h3 class="font-bold text-slate-900">Talk to our team</h3>
+                            <a href="tel:+254782603291" class="text-sm text-slate-600 mt-1 block hover:text-brand-600">0782603291</a>
+                            <a href="mailto:twyfordtilesnationalceramics@gmail.com" class="text-sm text-brand-700 mt-1 block break-all hover:underline">twyfordtilesnationalceramics@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <div class="p-5 sm:p-6">
+                            <h2 class="text-xl font-extrabold text-slate-900">Find us in Nyeri</h2>
+                            <p class="text-sm text-slate-600 mt-1">Nyeri, Kenya. Use the map to plan your visit.</p>
+                        </div>
+                        <iframe
+                            title="Map to Capital Mabati in Nyeri, Kenya"
+                            src="https://maps.google.com/maps?q=Capital%20Mabati%20Nyeri%20Kenya&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            class="w-full h-80 border-0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="p-4 border-t border-gray-100">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Capital+Mabati+Nyeri+Kenya" target="_blank" rel="noopener noreferrer" class="text-sm text-brand-700 font-bold hover:underline">Open the map in Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+            <p>&copy; 2026 Capital Mabati. All Rights Reserved.</p>
+            <a href="index.html" class="text-brand-500 hover:text-brand-300 font-semibold">Back to the shop</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', event => {
+            event.preventDefault();
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+            const subject = formData.get('subject').toString().trim();
+            const body = [
+                `Name: ${formData.get('name').toString().trim()}`,
+                `Email: ${formData.get('email').toString().trim()}`,
+                `Phone: ${formData.get('phone').toString().trim() || 'Not provided'}`,
+                '',
+                'Query:',
+                formData.get('message').toString().trim()
+            ].join('\n');
+            document.getElementById('formNotice').textContent = 'Your email app should open with your query. Please send the prepared email to complete your enquiry.';
+            document.getElementById('formNotice').classList.remove('hidden');
+            window.location.href = `mailto:twyfordtilesnationalceramics@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+
+</html>
